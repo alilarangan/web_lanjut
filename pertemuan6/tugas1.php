@@ -3,9 +3,11 @@
 	<title>Tugas</title>
 </header>
 <body>
-	<h1> FORM BIODATA</h1>
 	<FORM action="#" method="POST">
 	<table style="border: 1px solid black;">
+		<tr>
+			<td colspan="3"><h1 style="text-align: center;"> FORM BIODATA</h1></td>
+		</tr>
 		<tr>
 			<td>First Name</td>
 			<td>:</td>
