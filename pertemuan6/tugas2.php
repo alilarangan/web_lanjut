@@ -59,6 +59,7 @@
                     $jumlah = $_POST["jml"];
                     $pilih;
                     $total;
+                    $jenis;
 
                     echo "<tr>
                             <td>Nama </td>
@@ -66,26 +67,35 @@
                             <td>".$nama."</td>
                         </tr>";
                     echo "<tr>
-                            <td>Nama </td>
+                            <td>Telp </td>
                             <td>:</td>
                             <td>".$telp."</td>
                         </tr>";
                     switch ($kelas){
                         case "VIP":
+                            $jenis ="VIP";
                             $pilih = 500000;
                             break;
                         case "kelas1":
+                            $jenis ="Kelas1";
                             $pilih = 400000;
                             break;
                         case "kelas2":
+                            $jenis ="Kelas2";
                             $pilih = 300000;
                             break;
                         case "kelas3":
+                            $jenis ="Kelas3";
                             $pilih = 200000;
                             break;
                         default:
                             echo "Data tidak ada";
                         }
+                        echo "<tr>
+                            <td>Jenis Tiket </td>
+                            <td>:</td>
+                            <td>".$jenis."</td>
+                            </tr>";
                         echo "<tr>
                             <td>Harga Tiket </td>
                             <td>:</td>
