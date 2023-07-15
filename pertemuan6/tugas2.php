@@ -4,7 +4,7 @@
 </head>
 <body>
     <form action="#" method="post">
-        <table style="border: 1px solid black;">
+        <table style="border: 1px solid black; margin-left:auto;margin-right:auto">
             <tr>
                 <td colspan="3" style="text-align: center;"><h3>FORM TIKET BOLA SEAGAMES 2018</h3>
                 <h3>INDONESIA VS MALAYSIA<br>PUKUL 15:00 WIB</h3>
