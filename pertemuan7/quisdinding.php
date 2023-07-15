@@ -4,7 +4,7 @@
 </head>
 <body>
     <h1>Quis Kelompok 1 (Ganjil)</h1>
-    <h2>Menampilkan Luas dinding dan harga sebuah kamar</h2>
+    <h2>Menampilkan Luas dinding dan harga cat sebuah kamar</h2>
     
     <?php
         $sisi = 12*4;
