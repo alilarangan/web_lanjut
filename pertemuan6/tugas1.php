@@ -79,7 +79,7 @@
 				echo $k[$i];
 				if($i<count($k)-1){
 					if($i==count($k)-2){
-						echo ", dan ";
+						echo " dan ";
 					}else{
 						echo ", ";
 					}
