@@ -13,8 +13,8 @@
         $luas_cat = $sisi - $pintu -$jendela;
         $harga= $luas_cat * 25000;
 
-        echo "<h3>Luas Dinding : ".$luas_cat." meter</h3>";
-        echo "<h3>Harga keseluruhan : Rp ".number_format($harga, 0,',','.')." </h3>";
+        echo "<h3>Luas Dinding yang akan dicat : ".$luas_cat." meter</h3>";
+        echo "<h3>Harga keseluruhan pengecatan : Rp ".number_format($harga, 0,',','.')." </h3>";
 
 
     ?>
