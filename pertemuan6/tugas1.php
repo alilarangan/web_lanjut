@@ -4,7 +4,7 @@
 </header>
 <body>
 	<FORM action="#" method="POST">
-	<table style="border: 1px solid black;">
+	<table style="border: 1px solid black; margin-left:auto;margin-right:auto">
 		<tr>
 			<td colspan="3"><h1 style="text-align: center;"> FORM BIODATA</h1></td>
 		</tr>
