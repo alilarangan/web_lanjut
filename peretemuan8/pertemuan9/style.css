@@ -1,0 +1,71 @@
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style the menu */
+nav {
+    background-color: #0300b8; /* Warna latar belakang */
+    padding: 10px; /* Jarak antara menu dan konten */
+}
+
+nav ul {
+    display: flex; /* Menggunakan flexbox untuk menyusun menu secara horisontal */
+}
+
+nav li {
+    margin-right: 20px; /* Jarak antara setiap item menu */
+}
+
+nav li:last-child {
+    margin-right: 0; /* Menghilangkan margin kanan pada item terakhir */
+}
+
+nav a {
+    text-decoration: none; /* Menghapus garis bawah pada tautan */
+    color: #fff; /* Warna teks */
+    padding: 5px 10px; /* Ruang di dalam setiap item menu */
+}
+
+nav a:hover {
+    background-color: #b2bd19; /* Warna latar belakang saat dihover */
+    border-radius: 5px; /* Membuat sudut melengkung pada item saat dihover */
+}
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+h2 {
+    margin-bottom: 10px;
+}
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Warna latar belakang saat dihover (opsional) */
+}
