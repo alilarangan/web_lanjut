@@ -1,0 +1,13 @@
+.table_index{
+    border: 1px solid black;
+    width: 50%;
+    text-align: center;
+    margin:0 auto;
+}
+.table_insert{
+    margin:0 auto;
+    width: 30%;
+}
+h1{
+    text-align: center;
+}

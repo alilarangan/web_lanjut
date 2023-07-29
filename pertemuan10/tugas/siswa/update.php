@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <?php include("koneksi.php"); 
+    <?php include("../koneksi.php"); 
     if(isset($_GET['ni'])){
         $nis = $_GET['ni'];
         $sql = "SELECT * FROM siswa WHERE ni=$nis";
@@ -56,7 +56,7 @@
     ?>
     </table>
     <?php
-    include("koneksi.php");
+    include("../koneksi.php");
         if(isset($_POST['simpan'])){
             $n = $_POST['nis'];
             $nama = $_POST['nama'];

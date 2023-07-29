@@ -1,8 +1,8 @@
 <?php 
-    include("koneksi.php"); 
-    if(isset($_GET['ni'])){
-        $nis = $_GET['ni'];
-        $sql = "DELETE FROM siswa WHERE ni=$nis";
+    include("../koneksi.php"); 
+    if(isset($_GET['kd_sekolah'])){
+        $kd_sekolah = $_GET['kd_sekolah'];
+        $sql = "DELETE FROM sekolah WHERE kd_sekolah=$kd_sekolah";
         if ($kon->query($sql) === TRUE) {
             header("Location: index.php");
             exit();

@@ -11,27 +11,25 @@
     <table cellpadding="0" cellspacing="0" class="table_index">
         <thead>
             <td>No</td>
-            <td>NIS</td>
-            <td>Nama</td>
-            <td>Kelas</td>
-            <td>Jurusan</td>
+            <td>Kode Sekolah</td>
+            <td>Nama Sekolah</td>
+            <td>Alamat</td>
             <td><a href="insert.php">Tambah</a></td>
         </thead>
         <?php
-            include("koneksi.php");
-            $sql = "SELECT * FROM siswa";
+            include("../koneksi.php");
+            $sql = "SELECT * FROM sekolah";
             $result = $kon->query($sql);
             $no=1;
             if($result->num_rows>0){
                 while($row = $result->fetch_assoc()){
                 echo "<tr>";
                 echo "<td>".$no++."</td>";
-                echo "<td>".$row["ni"]."</td>";
-                echo "<td>".$row["nama"]."</td>";
-                echo "<td>".$row["kelas"]."</td>";
-                echo "<td>".$row["jurusan"]."</td>";
-                echo "<td><a href='update.php?ni=" . $row["ni"] . "'>Edit</a> | 
-                <a href='delete.php?ni=" . $row["ni"] . "'>Hapus</a></td>";
+                echo "<td>".$row["kd_sekolah"]."</td>";
+                echo "<td>".$row["nama_sekolah"]."</td>";
+                echo "<td>".$row["alamat"]."</td>";
+                echo "<td><a href='update.php?kd_sekolah=" . $row["kd_sekolah"] . "'>Edit</a> | 
+                <a href='delete.php?kd_sekolah=" . $row["kd_sekolah"] . "'>Hapus</a></td>";
                 echo "</tr>";
                 }
             }

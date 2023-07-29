@@ -12,24 +12,14 @@
     <table class="table_insert">
     <form action="#" method="post">
         <tr>
-            <td>NIS</td>
+            <td>Kode Jurusan</td>
             <td>:</td>
-            <td><input type="text" name="nis"></td>
+            <td><input type="text" name="kd_jurusan"></td>
         </tr>
         <tr>
-            <td>Nama</td>
+            <td>Nama Jurusan</td>
             <td>:</td>
-            <td><input type="text" name="nama"></td>
-        </tr>
-        <tr>
-            <td>Kelas</td>
-            <td>:</td>
-            <td><input type="text" name="kelas"></td>
-        </tr>
-        <tr>
-            <td>Jurusan</td>
-            <td>:</td>
-            <td><input type="text" name="jurusan"></td>
+            <td><input type="text" name="nama_jurusan"></td>
         </tr>
         <tr>
             <td></td>
@@ -39,14 +29,13 @@
     </form>
     </table>
     <?php
-    include("koneksi.php");
+    include("../koneksi.php");
         if(isset($_POST['simpan'])){
-            $nis = $_POST['nis'];
-            $nama = $_POST['nama'];
-            $kelas = $_POST['kelas'];
-            $jurusan = $_POST['jurusan'];
+            $kdskl = $_POST['kd_sekolah'];
+            $nama_skl = $_POST['nama_sekolah'];
+            $alamat = $_POST['alamat'];
 
-            $sql = "INSERT INTO siswa(ni, nama, kelas, jurusan) VALUES ('$nis','$nama','$kelas','$jurusan')";
+            $sql = "INSERT INTO sekolah(kd_sekolah, nama_sekolah, alamat) VALUES ('$kdskl','$nama_skl','$alamat')";
             if($kon->query($sql)==TRUE){
                 header("Location: index.php");
                 exit();
