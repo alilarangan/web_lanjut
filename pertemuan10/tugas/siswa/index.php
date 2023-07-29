@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>SEKOLAH MENENGAH KEJURUAN</h1>
+    <h1>SISWA</h1>
     <table cellpadding="0" cellspacing="0" class="table_index">
         <thead>
             <td>No</td>

@@ -16,7 +16,7 @@
             $row = $result->fetch_assoc();
             ?>
     <a href="index.php"><<==</a>
-    <h1>INSERT</h1>
+    <h1>UPDATE</h1>
     <table class="table_insert">
     <form action="#" method="post">
         <tr>

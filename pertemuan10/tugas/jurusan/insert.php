@@ -31,11 +31,10 @@
     <?php
     include("../koneksi.php");
         if(isset($_POST['simpan'])){
-            $kdskl = $_POST['kd_sekolah'];
-            $nama_skl = $_POST['nama_sekolah'];
-            $alamat = $_POST['alamat'];
+            $kdjr = $_POST['kd_jurusan'];
+            $nama_jr = $_POST['nama_jurusan'];
 
-            $sql = "INSERT INTO sekolah(kd_sekolah, nama_sekolah, alamat) VALUES ('$kdskl','$nama_skl','$alamat')";
+            $sql = "INSERT INTO jurusan(kd_jurusan, nama_jurusan) VALUES ('$kdjr','$nama_jr')";
             if($kon->query($sql)==TRUE){
                 header("Location: index.php");
                 exit();
