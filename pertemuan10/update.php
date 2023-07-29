@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>insert</title>
+    <title>update</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
         <tr>
             <td>NIS</td>
             <td>:</td>
-            <td><input type="text" name="nis" value="<?php echo $row['ni'] ?>"></td>
+            <td><input type="text" name="nis" value="<?php echo $row['ni'] ?>" disabled></td>
         </tr>
         <tr>
             <td>Nama</td>
