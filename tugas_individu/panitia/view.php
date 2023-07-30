@@ -1,7 +1,7 @@
 <div class="conten">
   <div class="container">
     <div class="custom-table">
-    <button id="openModalBtn">Open Modal</button>
+            <button type="button">Tambah</button>
       <div class="table-header">
         <div class="header-item">NO</div>
         <div class="header-item">Kode Petugas</div>
