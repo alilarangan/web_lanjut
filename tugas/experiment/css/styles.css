@@ -1,0 +1,175 @@
+.teks-container {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  /* styles.css */
+.checkbox-container,
+.radio-container {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/*input*/
+.input-text {
+    width: 50%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+.input-text:focus {
+    background-color: #f2f2f2;
+    color: #333;
+    outline: none;
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+  }
+  /*combobox*/
+  .combobox {
+    width: 50%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .combobox:focus {
+    outline: none;
+    border-color: #2196F3;
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+  }
+  
+  /* Styling dropdown arrow */
+  .combobox::-ms-expand {
+    display: none;
+  }
+  
+  .combobox:after {
+    content: "\25BC";
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  /* Hover effect */
+  .combobox:hover {
+    border-color: #999;
+  }
+  /*batas combobox*/
+  /* textarea */
+  /* styles.css */
+.custom-textarea {
+    width: 50%;
+    height: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    resize: vertical; 
+  }
+  
+  .custom-textarea:focus {
+    outline: none;
+    border-color: #2196F3;
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+  }
+  /*batas textarea  */
+  /* button */
+.custom-button {
+    padding: 10px 20px;
+    font-size: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-button:hover {
+    background-color: #0D47A1;
+  }
+  
+  .custom-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(33, 150, 243, 0.5);
+  }
+  /* button delete */
+  .custom-delete {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e03838;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-delete:hover {
+    background-color: #8f0303;
+  }
+  
+  .custom-delete:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(243, 33, 33, 0.5);
+  }
