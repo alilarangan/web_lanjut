@@ -7,6 +7,7 @@
 <body>
   <?php
    include("view.php");
+   include("input.php");
   ?>
 </body>
 </html>
