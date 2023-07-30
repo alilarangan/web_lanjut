@@ -13,3 +13,31 @@ menuItems.forEach(item => {
     console.log(window.location.href);
   }
 });
+
+// Get the modal element
+const modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+const openModalBtn = document.getElementById('openModalBtn');
+
+// Get the <span> element that closes the modal
+const closeBtn = document.getElementsByClassName('close')[0];
+
+// Function to open the modal
+function openModal() {
+    modal.style.display = 'block';
+}
+
+// Function to close the modal
+function closeModal() {
+    modal.style.display = 'none';
+}
+
+// Event listeners
+openModalBtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', (event) => {
+    if (event.target === modal) {
+        closeModal();
+    }
+});
