@@ -6,7 +6,6 @@
 </head>
 <body>
   <?php
-  
    include("view.php");
   ?>
 </body>
