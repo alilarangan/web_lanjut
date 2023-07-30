@@ -37,17 +37,25 @@ body {
   h1{
     text-align: center;
   }
-  /* Gaya dasar untuk tabel */
+
+/* Gaya dasar untuk tabel */
+.container {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
 .custom-table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 /* Gaya untuk header tabel */
 .table-header {
-  background-color: #f2f2f2;
+  background-color: #020094;
   display: flex;
+  color: #fff;
 }
 
 .header-item {
@@ -65,11 +73,22 @@ body {
 .table-cell {
   flex: 1;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #f2f2f2;
 }
 
 /* Gaya untuk baris data bergantian (striped) */
 .table-row:nth-child(even) {
-  background-color: #f2f2f2;
+  background-color: #ccc;
 }
 
+/* Efek hover pada baris data */
+.table-row:hover {
+  background-color: #ddd;
+}
+.conten{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
