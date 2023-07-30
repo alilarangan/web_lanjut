@@ -33,4 +33,7 @@ body {
   a.active {
     background-color: #ff0000;
     color: #fff;
-  } 
+  }
+  h1{
+    text-align: center;
+  }
