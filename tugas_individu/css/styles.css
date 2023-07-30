@@ -31,9 +31,8 @@ body {
     background-color: #000130;
   }
   a.active {
-    background-color: #ff0000; /* Misalnya, warna latar belakang merah untuk menu aktif */
-    color: #fff; /* Warna teks putih untuk menu aktif */
-  }
+    background-color: #ff0000;
+    color: #fff;}
   .dsb_conten h1{
     text-align: center;
   }
