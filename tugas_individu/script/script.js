@@ -1,9 +1,6 @@
-// Ambil elemen menu
 const menuItems = document.querySelectorAll('nav a');
 
-// Loop melalui setiap elemen menu
 menuItems.forEach(item => {
-  // Jika URL halaman saat ini sama dengan URL menu, tambahkan class "active"
   if (item.href === window.location.href) {
     item.classList.add('active');
   }
@@ -13,3 +10,27 @@ menuItems.forEach(item => {
     console.log(window.location.href);
   }
 });
+// input
+const modal = document.getElementById('modal');
+
+function openModal() {
+    modal.style.display = 'block';
+    modal.classList.add('open');
+}
+
+function closeModal() {
+    modal.classList.remove('open');
+
+    setTimeout(() => {
+      modal.style.display = 'none';
+  }, 300);
+}
+document.querySelector('.open-modal-btn').onclick = openModal;
+document.querySelector('.close').onclick = closeModal;
+
+window.onclick = function(event) {
+    if (event.target === modal) {
+        event.stopPropagation();
+    }
+};
+// action

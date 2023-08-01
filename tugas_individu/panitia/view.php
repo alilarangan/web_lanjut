@@ -1,59 +1,36 @@
 <div class="conten">
   <div class="container">
     <div class="custom-table">
-            <button type="button">Tambah</button>
-      <div class="table-header">
-        <div class="header-item">NO</div>
-        <div class="header-item">Kode Petugas</div>
-        <div class="header-item">Nama</div>
-        <div class="header-item">Bagian</div>
-        <div class="header-item">Telpon</div>
-        <div class="header-item">Aksi</div>
-      </div>
-      <div class="table-row">
-        <div class="table-cell">1</div>
-        <div class="table-cell">20012</div>
-        <div class="table-cell">Ali</div>
-        <div class="table-cell">Bendahara</div>
-        <div class="table-cell">0852910XXX</div>
-        <div class="table-cell">
-            <button type="button">Edit</button>
-            <button type="button">Hapus</button>
-        </div>
-      </div>
-      <div class="table-row">
-        <div class="table-cell">2</div>
-        <div class="table-cell">20013</div>
-        <div class="table-cell">Jono</div>
-        <div class="table-cell">Sekretaris</div>
-        <div class="table-cell">0852910XXX</div>
-        <div class="table-cell">
-            <button type="button">Edit</button>
-            <button type="button">Hapus</button>
-        </div>
-      </div>
-      <div class="table-row">
-        <div class="table-cell">3</div>
-        <div class="table-cell">20014</div>
-        <div class="table-cell">Haryono</div>
-        <div class="table-cell">Anggota</div>
-        <div class="table-cell">0852910XXX</div>
-        <div class="table-cell">
-            <button type="button">Edit</button>
-            <button type="button">Hapus</button>
-        </div>
-      </div>
-      <div class="table-row">
-        <div class="table-cell">4</div>
-        <div class="table-cell">20014</div>
-        <div class="table-cell">Haryono</div>
-        <div class="table-cell">Anggota</div>
-        <div class="table-cell">0852910XXX</div>
-        <div class="table-cell">
-            <button type="button">Edit</button>
-            <button type="button">Hapus</button>
-        </div>
-      </div>
+      <button class="open-modal-btn" onclick="openModal()">Tambah</button>
+      <table>
+        <tr>
+            <th width="20">No</th>
+            <th>Kode Panitia</th>
+            <th>Nama</th>
+            <th>Bagian</th>
+            <th>Telpon</th>
+            <th width="120">Action</th>
+        </tr>
+        <?php
+            include("koneksi.php");
+            $sql = "SELECT * FROM panitia";
+            $result = $kon->query($sql);
+            $no=1;
+            if($result->num_rows>0){
+                while($row = $result->fetch_assoc()){
+                echo "<tr>";
+                echo "<td>".$no++."</td>";
+                echo "<td>".$row["kd_panitia"]."</td>";
+                echo "<td>".$row["nama"]."</td>";
+                echo "<td>".$row["bagian"]."</td>";
+                echo "<td>".$row["tlp"]."</td>";
+                echo "<td class='aksi'><a href='' class='btn-edit'>Edit</a> <a href='' class='btn-hapus'>Hapus</a></td>";
+                echo "</tr>";
+                }
+            }
+            $kon->close();
+          ?>
+    </table>
     </div>
     </div>
 </div>

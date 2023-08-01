@@ -5,7 +5,7 @@ body {
   }
   
   nav {
-    background-color: #020094;
+    background-color: #142dcdec;
   }
   
   ul {
@@ -20,18 +20,18 @@ body {
     padding: 0;
   }
   
-  a {
+  li a {
     display: block;
     color: #fff;
     text-decoration: none;
     padding: 15px 20px;
   }
   
-  a:hover {
-    background-color: #000130;
+  li a:hover {
+    background-color: #0d21a3;
   }
-  a.active {
-    background-color: #ff0000;
+  li a.active {
+    background-color: #0d21a3;
     color: #fff;
   }
   h1{
@@ -42,61 +42,170 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 100%;
   margin-top: 10px;
-  background-color: #0200940e;
   border-radius: 8px;
 }
 .custom-table {
-  width: 99%;
+  width: 80%;
   border-collapse: collapse;
   margin-bottom: 20px;
   margin-top: 20px;
 }
-
-/* Gaya untuk header tabel */
-.table-header {
-  background-color: #020094;
-  display: flex;
-  color: #fff;
+/* style.css */
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-.header-item {
-  flex: 1;
+th, td {
   padding: 10px;
-  font-weight: bold;
-  border: 1px solid #ccc;
+  text-align: left;
 }
 
-/* Gaya untuk baris data */
-.table-row {
-  display: flex;
+th {
+  background-color: #0c8a79;
+  color: #ffffff;
 }
 
-.table-cell {
-  flex: 1;
-  padding: 10px;
-  border: 1px solid #f2f2f2;
+tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
 
-/* Gaya untuk baris data bergantian (striped) */
-.table-row:nth-child(even) {
-  background-color: #ccc;
-}
-
-/* Efek hover pada baris data */
-.table-row:hover {
+tr:hover {
   background-color: #ddd;
 }
-.conten{
-  margin: 0;
-  padding: 0;
+
+/* input panitia */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Form styles */
+form {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
 }
-.table_top{
-  background-color: #02009415;
-  border-radius: 8px 8px 0px 0px;
-  height: 20px;
+
+label, input, button {
+  margin-bottom: 10px;
 }
+
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-size: medium;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+.modal.open {
+  opacity: 1;
+}
+.open-modal-btn{
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 7px 13px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: medium;
+  /* text-decoration: none; */
+}
+.open-modal-btn:hover {
+  /* Gaya tombol saat di-hover */
+  background-color: #45a049;
+}
+/* input */
+input[type="text"]:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.custom-input {
+  border: none;
+  border-bottom: 1px solid #007bff;
+  outline: none;
+  padding: 6px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+.custom-input:hover {
+  border-bottom-color: #42b300;
+}
+.btn-edit{
+  background-color: #CDB314;
+}
+.btn-edit:hover {
+  background-color: #ffe015;
+}
+.btn-hapus,
+.btn-edit {
+  color: #fff;
+  padding: 4px 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-hapus{
+  background-color: #CD142E;
+}
+.btn-hapus:hover {
+  background-color: #b30000;
+}
+.aksi{
+  text-align: center; /* Mengatur posisi horizontal ke tengah */
+  vertical-align: middle; /* Mengatur posisi vertikal ke tengah */
+}
+/* popup hapus */

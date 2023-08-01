@@ -7,6 +7,12 @@
 <body>
   <?php
    include("view.php");
+   include("input.php");
+   include("simpan.php");
+   include("popup_hapus.php");
+   include("poup_edit.php");
+   
   ?>
+  <script src="../script.js"></script>
 </body>
 </html>
