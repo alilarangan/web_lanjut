@@ -1,3 +1,13 @@
+
+<a href="index.php?page=panitia&aksi=simpan">simpan</a>
+<a href="index.php?page=panitia&aksi=ubah">ubah</a>
+
+<?php
+$aksi = $_GET['aksi'];
+
+echo $aksi;
+?>
+
 <div class="conten">
   <div class="container">
     <div class="custom-table">
@@ -24,7 +34,7 @@
                 echo "<td>".$row["nama"]."</td>";
                 echo "<td>".$row["bagian"]."</td>";
                 echo "<td>".$row["tlp"]."</td>";
-                echo "<td class='aksi'><a href='' class='btn-edit'>Edit</a> <a href='' class='btn-hapus'>Hapus</a></td>";
+                echo "<td class='aksi'><a href='' class='btn-edit' id='openModalBtn'>Edit</a> <a href='' class='btn-hapus'>Hapus</a></td>";
                 echo "</tr>";
                 }
             }

@@ -9,6 +9,7 @@
 <body>
 <?php
     include ("menu.php");
+    include("data/koneksi.php");
     function siswa()
     {
         echo "tampilan siswa";
@@ -19,7 +20,7 @@
     }
     function kelas()
     {
-        echo "Ini adalah halaman kelas";
+        include("kelas/index.php");
     }
     function pesan()
     {

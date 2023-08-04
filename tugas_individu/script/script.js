@@ -34,3 +34,30 @@ window.onclick = function(event) {
     }
 };
 // action
+// Ambil elemen-elemen yang dibutuhkan
+var modale = document.getElementById("myModale");
+var openModalBtn = document.getElementById("openModalBtn");
+var closeModalBtn = document.getElementsByClassName("closee")[0];
+
+// Ketika tombol buka modal diklik, tampilkan modal
+openModalBtn.onclick = function() {
+  modale.style.display = "block";
+};
+
+// Ketika tombol close pada modal diklik, sembunyikan modal
+closeModalBtn.onclick = function() {
+  modale.style.display = "none";
+};
+
+// Jangan sembunyikan modal jika pengguna mengklik di luar modal
+modal.onclick = function(e) {
+  e.stopPropagation();
+};
+
+// Jika pengguna menekan tombol ESC, sembunyikan modal
+document.onkeydown = function(event) {
+  event = event || window.event;
+  if (event.keyCode === 27) {
+    modale.style.display = "none";
+  }
+};
